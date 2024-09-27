@@ -2,24 +2,24 @@
 Repositório da primeira ME de Laboratório de Programação da UNIMA(Universidade de Maceió) por Antônio Santiago
 -------------------------------------------------------------------------------------------------------------------------
 1-
-public static void main(String[] Args) {  
-	        Scanner scanner = new Scanner(System.in);
-	        System.out.print("Digite o nome do funcionário: ");
-	        String nome = scanner.nextLine();
-	        System.out.print("Digite o salário atual do funcionário: ");
-	        double salario = scanner.nextDouble();
-	        System.out.print("Digite quantos anos ele trabalha na empresa: ");
-	        int anosTrabalho = scanner.nextInt();
-	        double novoSalario;
-	        if (anosTrabalho < 3) {
-	            novoSalario = salario + (salario * 0.03); 
-	        } else if (anosTrabalho >= 3 && anosTrabalho < 10) {
-	            novoSalario = salario + (salario * 0.125); 
-	        } else {
-	            novoSalario = salario + (salario * 0.20);
-	        }
-	        System.out.printf("O novo salário de %s é: R$ %.2f\n", nome, novoSalario);
-	        scanner.close();
+	public static void main(String[] Args){
+	Scanner scanner = new Scanner(System.in);
+	System.out.print("Digite o nome do funcionário: ");
+	String nome = scanner.nextLine();
+	System.out.print("Digite o salário atual do funcionário: ");
+	double salario = scanner.nextDouble();
+	System.out.print("Digite quantos anos ele trabalha na empresa: ");
+	int anosTrabalho = scanner.nextInt();
+	double novoSalario;
+	if (anosTrabalho < 3) {
+	novoSalario = salario + (salario * 0.03); 
+	} else if (anosTrabalho >= 3 && anosTrabalho < 10) {
+	novoSalario = salario + (salario * 0.125); 
+	} else {
+	novoSalario = salario + (salario * 0.20);
+	}
+	System.out.printf("O novo salário de %s é: R$ %.2f\n", nome, novoSalario);
+	scanner.close();
 	}	 
 -------------------------------------------------------------------------------------------------------------------------
 2-
